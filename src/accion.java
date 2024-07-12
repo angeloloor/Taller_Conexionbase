@@ -55,8 +55,6 @@ public accion(){
             setVisible(false); // Ocultar la ventana de login
 
 
-
-
         } else {
             JOptionPane.showMessageDialog(null,"Usuario o contraseña incorrectos.");
 
@@ -68,9 +66,9 @@ public accion(){
     }
 
     public Connection conexion() throws SQLException {
-        String url= "jdbc:mysql://localhost:3306/esfotventa";
+        String url= "jdbc:mysql://localhost:3306/curso";
         String user="root";
-        String password="1234";
+        String password="123456";
 
         return DriverManager.getConnection(url,user,password);
     }
